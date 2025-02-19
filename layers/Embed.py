@@ -184,6 +184,6 @@ class Emb(nn.Module):
         s_x1 = self.EmbLayer_1(x)
         s_x2 = self.EmbLayer_2(x)
         s_x3 = self.EmbLayer_3(x)
-        s_x4 = self.EmbLayer_3(x)
+        s_x4 = self.EmbLayer_4(x)
         s_out = torch.cat([s_x1, s_x2, s_x3, s_x4], -1)
         return s_out
